@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 400;
+    color: #4d4d4d;
+}
+
+body {
+    line-height: 1.7;
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #32dbc6;
+}
+
+.primary-nav {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.shrink {
+    padding-top: 4 !important;
+    padding-bottom: 0 !important;
+    min-height: 80px !important;
+}
+
+.shrink .navbar-brand {
+    height: 0 !important;
+    line-height: 0 !important;
+}
+
+
+
+.jumbotron-fluid {
+    background-color: #3b3b3b !important;
+}
+
+.guitartag {
+    margin: 20px;
+    font-size: 60px !important;
+    font-weight: bold;
+
+
+}
+
+.guitartag:hover {
+    color: #32dbc6;
+    transition: 0.5s;
+}
+
+.guitarsubtag {
+    font-size: 20px;
+}
+
+#poster {
+    height: 85vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), #32dbc6);
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+}
+
+#poster img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+}
+
+.shopbtn {
+    /* background-color: yellow; */
+    color: white;
+    border: transparent;
+    border-radius: 50px !important;
+}
+
+.shopbtn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px white;
+}
+
+#featued {
+    height: 100vh;
+
+}
+
+.feature-hr {
+    width: 10%;
+    height: 4px;
+    box-shadow: 5px 5px 10px black;
+    background-color: #32dbc6;
+}
+
+.inst-card img {
+    height: 252px !important;
+    width: 252px;
+    margin: 10px !important;
+}
+
+.rate {
+    color: #f0c73b;
+}
+
+.categories h2 {
+    font-weight: bold;
+    font-size: 45px !important;
+}
+
+.categories h2:hover {
+    font-weight: bold;
+    font-size: 45px !important;
+    color: #32dbc6;
+    transition: 0.3s;
+}
+
+.hotctg {
+    width: 100% !important;
+}
+
+.subcat {
+    font-size: 20px;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+#hotctg {
+    height: 100vh;
+}
+
+
+
+
+.site-footer {
+    width: 100% !important;
+    padding-bottom: 0;
+    padding: 3em 0;
+    background: #333333;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+@media (min-width: 768px) {
+    .site-footer {
+        padding: 11em 0;
+    }
+}
+
+.site-footer .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.site-footer p {
+    color: #737373;
+}
+
+.site-footer h2,
+.site-footer h3,
+.site-footer h4,
+.site-footer h5 {
+    color: #fff;
+}
+
+.site-footer a {
+    color: #999999;
+}
+
+.site-footer a:hover {
+    color: white;
+}
+
+.site-footer ul li {
+    margin-bottom: 10px;
+}
+
+.site-footer .footer-heading {
+    font-size: 16px;
+    color: #fff;
+}
+
+footer {
+    position: relative;
+    z-index: -1 !important;
+    margin-top: 350px;
+    width: 100% !important;
+}
+
+.main-footer {
+    width: 100% !important;
+}
+
+
+#btnTop {
+    padding: 0px 10px 0px 10px;
+    background-color: #32dbc6;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+#btnTop i {
+    color: white !important;
+}
+
+#btnTop:hover {
+    color: black;
+    box-shadow: 0px 0px 4px 4px white;
+}

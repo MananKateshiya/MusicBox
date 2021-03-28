@@ -1,0 +1,158 @@
+#cards div {
+    height: 600px;
+}
+
+#cards div:first-child {
+    background: #32dbc6;
+    opacity: 0.9;
+
+}
+
+#cards div:last-child {
+    background: rgb(228, 224, 224, 0.9);
+
+}
+
+#cards img {
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    border: 3px solid #32dbc6;
+    left: 42%;
+    bottom: -75%;
+}
+
+.site-section-fluid:hover img {
+    animation-name: logospin;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+}
+
+@keyframes logospin {
+    from {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+#myVideo {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btnheader {
+    background: #32dbc6;
+
+}
+
+
+.btn-block {
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius: 50px 50px 0px 0px;
+}
+
+
+.hr-left {
+    background-color: rgb(185, 133, 74);
+    /* background-color: #333; */
+    width: 350px;
+    height: 10px;
+    border-radius: 0px 0px 100px 0px;
+    position: absolute;
+    left: 0;
+    animation-name: hranimate;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.hr-right {
+    background-color: rgb(185, 133, 74);
+    /* background-color: #333; */
+    width: 350px;
+    height: 10px;
+    border-radius: 0px 0px 0px 100px;
+    position: absolute;
+    right: 0;
+    animation-name: hranimate;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.hr-left2 {
+    background-color: rgb(185, 133, 74);
+    /* background-color: #333; */
+    width: 350px;
+    height: 10px;
+    margin-top: 550px;
+    border-radius: 0px 0px 100px 0px;
+    position: absolute;
+    left: 0;
+    animation-name: hranimate2;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.hr-right2 {
+    background-color: rgb(185, 133, 74);
+    /* background-color: #333; */
+    width: 350px;
+    height: 10px;
+    margin-top: 550px;
+    border-radius: 0px 0px 0px 100px;
+    position: absolute;
+    right: 0;
+    animation-name: hranimate2;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hranimate {
+    from {}
+
+    to {
+        margin-top: 150px;
+    }
+}
+
+@keyframes hranimate2 {
+    from {}
+    to {
+        margin-top: 450px;
+    }
+}
+
+
+
+.block2-span-left {
+    position: absolute;
+    margin-top: 200px;
+    width: 300px;
+    left: 0;
+}
+
+.block2-span-right {
+    right: 0;
+    margin-top: 200px;
+    position: absolute;
+    width: 300px;
+}
+
+
+#work-section{
+    height: 700px;
+    background: #343a40;
+}
