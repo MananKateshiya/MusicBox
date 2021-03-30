@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuiscBox</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous">
+    </script>
+
+    <!-- W3 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+
+
+    <!-- Typed & AOS links     -->
+    <script src="js/typed.js"></script>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+
+
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+
+    <!-- External CSS -->
+
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <header class="jumbotron-fluid pb-4 bg-dark"><br></header>
+
+
+
+    <nav class="navbar navbar-expand-xl sticky-top primary-nav">
+        <a class="navbar-brand mx-auto pt-1 shrink" href="#"><img class="img-fluid img-responsive" height="22"
+                src="assets/musicbox.png"></a>
+        <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon fa fa-caret-down p-1"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+
+                <li><a href="index.html" class="nav-link mr-4  text-center">Home</a></li>
+                <li><a href="instruments.html" class="nav-link mr-4 text-center">Instruments</a></li>
+                <li><a href="#artist-section" class="nav-link mr-4 text-center">Artist</a></li>
+                <li><a href="#learn-section" class="nav-link mr-4 text-center">Learn</a></li>
+                <li><a href="shop.html" class="nav-link mr-4 text-center">Shop</a></li>
+                <li><a href="#blog-section" class="nav-link mr-4 text-center">Blog</a></li>
+                <li><a href="#location-section" class="nav-link mr-4 text-center">Location</a></li>
+                <li><a href="#about-section" class="nav-link mr-4 text-center">About</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <img src="assets/animate.gif" alt="poster" class="img-fluid shop-poster">
+    </div>
+
+    <!-- ----------------------- SORT AND FILTER -------------------------- -->
+
+
+    <div class="container maincontainer">
+        <div class="row">
+            <div class="sort col-12 col-md-3 col-lg-3 col-xl-3 sandf" data-aos="fade-right"
+                data-aos-anchor="#temp-anchor" data-aos-offset="500" data-aos-duration="500">
+
+
+                <div class="dropdown-list text-center">
+                    <div class="dropdown dropmenu m-2">
+                        <button type="button" class="btn-drop dropdown-toggle" data-toggle="dropdown">
+                            Category
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-center" href="#">Category 1</a>
+                            <a class="dropdown-item text-center" href="#">Category 2</a>
+                            <a class="dropdown-item text-center" href="#">Category 3</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="dropdown dropmenu m-2">
+                        <button type="button" class="btn-drop dropdown-toggle" data-toggle="dropdown">
+                            Type
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-center" href="#">Type 1</a>
+                            <a class="dropdown-item text-center" href="#">Type 2</a>
+                            <a class="dropdown-item text-center" href="#">Type 3</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="dropdown dropmenu m-2">
+                        <button type="button" class="btn-drop dropdown-toggle" data-toggle="dropdown">
+                            Color
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-center" href="#">Color 1</a>
+                            <a class="dropdown-item text-center" href="#">Color 2</a>
+                            <a class="dropdown-item text-center" href="#">Color 3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters">
+
+                    <div class="fbyprice">
+
+                        <h5>Filter by Price</h5>
+
+                        <input type="text" class="js-range-slider  text-center" name="my_range" value="50"
+                            data-type="double" data-min="100" data-max="10000" data-from="200" data-to="3500"
+                            data-grid="true" />
+                    </div>
+
+                    <div class="fbygenre">
+                        <h5>Filter by Genres</h5>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 1
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 2
+                            </label>
+                        </div>
+
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 3
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 4
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="fbybrand">
+                        <h5>Filter by Brand</h5>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 1
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 2
+                            </label>
+                        </div>
+
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 3
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 4
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items col-12 col-md-9 col-lg-9 col-xl-9" data-aos="fade-left" data-aos-anchor="#temp-anchor"
+                data-aos-offset="500" data-aos-duration="500">
+
+                <div class="row card-deck">
+
+                    <div
+                        class="inst-card card-fluid text-center d-block mx-auto col-10 col-lg-4 col-md-4 col-xl-4 offset-sm-1 offset-lg-0 offset-md-0 offset-xl-0">
+                        <a href="shop.html" class="shop-link">
+                            <img src="assets/drum.png" alt="drum" class="img-fluid card-img-top">
+
+                            <div class="card-body">
+
+                                <p class="card-text text-center">WHITE ABSTRACT PRINT FRINGED</p>
+                                <div class="text-center">
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star-half-o rate"></i>
+                                    <i class="fa fa-star-o rate"></i>
+                                </div>
+                                <div class="submenu">
+                                    <div class="add">
+                                        <i class="fa fa-cart-plus sm-icon text-center"></i>
+                                    </div>
+                                    <div class="fav">
+                                        <i class="fa fa-heart-o sm-icon"></i>
+
+                                    </div>
+                                </div>
+                                <h5 class="card-text text-center mt-2">$500.0</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div
+                        class="inst-card card-fluid text-center d-block mx-auto col-10 col-lg-4 col-md-4 col-xl-4 offset-sm-1 offset-lg-0 offset-md-0 offset-xl-0">
+                        <a href="shop.html" class="shop-link">
+                            <img src="assets/drum2.png" alt="drum" class="img-fluid card-img-top">
+                            <div class="card-body">
+
+                                <p class="card-text text-center">GREY & SILVER WIRE OPTICAL</p>
+                                <div class="text-center">
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                </div>
+                                <div class="submenu">
+                                    <div class="add">
+                                        <i class="fa fa-cart-plus sm-icon text-center"></i>
+                                    </div>
+                                    <div class="fav">
+                                        <i class="fa fa-heart-o sm-icon"></i>
+
+                                    </div>
+                                </div>
+                                <h5 class="card-text text-center mt-2">$39.99</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div
+                        class="inst-card card-fluid text-center d-block mx-auto col-10 col-lg-4 col-md-4 col-xl-4 offset-sm-1 offset-lg-0 offset-md-0 offset-xl-0">
+                        <a href="shop.html" class="shop-link">
+                            <img src="assets/vio.png" alt="vio" class="img-fluid card-img-top">
+                            <div class="card-body">
+
+                                <p class="card-text text-center">GREY BERNHARD WILLHELM</p>
+                                <div class="text-center">
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star-o rate"></i>
+                                </div>
+                                <div class="submenu">
+                                    <div class="add">
+                                        <i class="fa fa-cart-plus sm-icon text-center"></i>
+                                    </div>
+                                    <div class="fav">
+                                        <i class="fa fa-heart-o sm-icon"></i>
+
+                                    </div>
+                                </div>
+                                <h5 class="card-text text-center mt-2">$777.59</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="row card-deck">
+                    <div
+                        class="inst-card card-fluid text-center d-block mx-auto col-10 col-lg-4 col-md-4 col-xl-4 offset-sm-1 offset-lg-0 offset-md-0 offset-xl-0">
+                        <a href="shop.html" class="shop-link">
+                            <img src="assets/guitar.png" alt="drum" class="img-fluid card-img-top">
+                            <div class="card-body">
+
+                                <p class="card-text text-center">CUTOUT FAUX SUEDE FLATS</p>
+                                <div class="text-center">
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                </div>
+                                <div class="submenu">
+                                    <div class="add">
+                                        <i class="fa fa-cart-plus sm-icon text-center"></i>
+                                    </div>
+                                    <div class="fav">
+                                        <i class="fa fa-heart-o sm-icon"></i>
+
+                                    </div>
+                                </div>
+                                <h5 class="card-text text-center mt-2">$69.69</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div
+                        class="inst-card card-fluid text-center d-block mx-auto col-10 col-lg-4 col-md-4 col-xl-4 offset-sm-1 offset-lg-0 offset-md-0 offset-xl-0">
+                        <a href="shop.html" class="shop-link">
+                            <img src="assets/drum3.png" alt="drum" class="img-fluid card-img-top">
+                            <div class="card-body">
+
+                                <p class="card-text text-center">RED CROCHET HIGH NECK</p>
+                                <div class="text-center">
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star-o rate"></i>
+                                </div>
+                                <div class="submenu">
+                                    <div class="add">
+                                        <i class="fa fa-cart-plus sm-icon text-center"></i>
+                                    </div>
+                                    <div class="fav">
+                                        <i class="fa fa-heart-o sm-icon"></i>
+
+                                    </div>
+                                </div>
+
+                                <h5 class="card-text text-center mt-2">$181.00</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div
+                        class="inst-card card-fluid text-center d-block mx-auto col-10 col-lg-4 col-md-4 col-xl-4 offset-sm-1 offset-lg-0 offset-md-0 offset-xl-0">
+                        <a href="shop.html" class="shop-link">
+                            <img src="assets/guitar2.png" alt="drum" class="img-fluid card-img-top">
+                            <div class="card-body">
+
+                                <p class="card-text text-center">ACOUSTIC GUITAR v2</p>
+                                <div class="text-center">
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                </div>
+                                <div class="submenu">
+                                    <div class="add">
+                                        <i class="fa fa-cart-plus sm-icon text-center"></i>
+                                    </div>
+                                    <div class="fav">
+                                        <i class="fa fa-heart-o sm-icon"></i>
+
+                                    </div>
+                                </div>
+                                <h5 class="card-text text-center mt-2">$29.99</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div
+                        class="inst-card card-fluid text-center d-block mx-auto col-10 col-lg-4 col-md-4 col-xl-4 offset-sm-1 offset-lg-0 offset-md-0 offset-xl-0">
+                        <a href="shop.html" class="shop-link">
+                            <img src="assets/flats.png" alt="vio" class="img-fluid card-img-top">
+                            <div class="card-body">
+
+                                <p class="card-text text-center">POINTED FAUX SUEDE FLATS (WIDE)</p>
+                                <div class="text-center">
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star-o rate"></i>
+                                    <i class="fa fa-star-o rate"></i>
+                                    <i class="fa fa-star-o rate"></i>
+                                </div>
+                                <div class="submenu">
+                                    <div class="add">
+                                        <i class="fa fa-cart-plus sm-icon text-center"></i>
+                                    </div>
+                                    <div class="fav">
+                                        <i class="fa fa-heart-o sm-icon"></i>
+
+                                    </div>
+                                </div>
+                                <h5 class="card-text text-center mt-2">$36.59</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div
+                        class="inst-card card-fluid text-center d-block mx-auto col-10 col-lg-4 col-md-4 col-xl-4 offset-sm-1 offset-lg-0 offset-md-0 offset-xl-0">
+                        <a href="shop.html" class="shop-link">
+                            <img src="assets/organ.png" alt="drum" class="img-fluid card-img-top">
+                            <div class="card-body">
+
+                                <p class="card-text text-center">MINI ORGAN</p>
+                                <div class="text-center">
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star rate"></i>
+                                    <i class="fa fa-star-0 rate"></i>
+                                </div>
+                                <div class="submenu">
+                                    <div class="add">
+                                        <i class="fa fa-cart-plus sm-icon text-center"></i>
+                                    </div>
+                                    <div class="fav">
+                                        <i class="fa fa-heart-o sm-icon"></i>
+
+                                    </div>
+                                </div>
+                                <h5 class="card-text text-center mt-2">$15.99</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <!-- card deck -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
+
+    <section>
+        <div class="main-footer">
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <h2 class="footer-heading mb-4">About Us</h2>
+                                    <p>We provide a platform for Musicians who wanna share their music to the
+                                        community.
+                                        And
+                                        those new fresher artist to show their skills to community.</p>
+                                </div>
+
+                                <div class="col-md-4 ml-auto">
+                                    <h2 class="footer-heading mb-4">Features</h2>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                            <form action="#" method="post">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control border-secondary text-white bg-transparent"
+                                        placeholder="Enter Email" aria-label="Enter Email"
+                                        aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary text-white" type="button"
+                                            id="button-addon2">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row pt-5 mt-5 text-center">
+                        <div class="col-md-12">
+                            <div class="border-top pt-5">
+                                <p>
+
+                                    Copyright &copy;<script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved | MusicBox<font size='5'>®</font>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- SCRIPTS -->
+
+
+    <script>
+        var mybutton = document.getElementById("btnTop");
+
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        $(".submenu").hide();
+
+        $(function () {
+            $(".inst-card").hover(function () {
+                $(this).find(".submenu").toggle(200);
+            });
+        });
+    </script>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/shrink.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/aosinit.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>
