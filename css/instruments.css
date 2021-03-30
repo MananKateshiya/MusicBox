@@ -126,6 +126,10 @@ nav {
     box-shadow: 0px 0px 5px white;
 }
 
+#shop-now{
+    text-decoration: none;
+}
+
 #featued {
     height: 100vh;
 
@@ -156,6 +160,12 @@ nav {
 .categories h2:hover {
     font-weight: bold;
     font-size: 45px !important;
+    color: #32dbc6;
+    transition: 0.3s;
+}
+
+.categories i:hover, span:hover{
+    cursor: pointer;
     color: #32dbc6;
     transition: 0.3s;
 }
