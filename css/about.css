@@ -196,9 +196,98 @@ nav {
     border-bottom: 15px solid white;
   }
 
+.bullet{
+    margin: 60px;
+}
+
+.bullet span{
+    margin: 10px;
+    font-size: 18px;
+    /* font-weight: 600; */
+}
+
+
+
+.myhr{
+    height: 4px;
+    width: 50% !important;
+    margin: 50px;
+}
+
+.fa-microphone-alt{
+    font-size: 40px;
+    margin: 5px;
+}
+
+
+.podbtn{
+
+    width: 300px;
+    background-color: #32dbc6;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+
+.podbtn i{
+    font-size: 25px;
+    color: white;
+}
+
+.podbtn:hover{
+transition: 0.3s;
+box-shadow: 0px 0px 3px 1px #333;
+color: white;
+transform: scale(1.1);
+}
+
+.podbtn i:hover{
+    color: white;
+}
+
+#counter{
+    
+}
+
+.counterbg{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-image: url(/assets/counter2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -200px;
+    height: 300px;
+    width: 100%;
+    /* filter: brightness(0.7); */
+}
+
+.icons{
+    font-size: 70px;
+    color: white;
+    filter: brightness(3);
+    margin-top: 50px;
+}
+
+
+.counterimg h4{
+    color: white;
+    margin: 20px;
+}
+
+.counterimg{
+    text-shadow: 0px 0px 4px white;
+}
+
+
+.count-num{
+    color: white;
+    text-shadow: 0px 0px 4px white;
+}
+
+
+
 /* FOOTER */
-
-
 
 
 
@@ -252,7 +341,7 @@ nav {
 footer {
     position: relative;
     z-index: -1 !important;
-    margin-top: 350px;
+    margin-top: 10px;
     width: 100% !important;
 }
 
