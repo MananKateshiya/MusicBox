@@ -110,7 +110,7 @@ nav {
 #start-body {
 
     height: 700px;
-    background: url(/assets/band1.jpg);
+    background-image: url('/assets/band1.jpg') !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay !important;
@@ -169,7 +169,7 @@ nav {
   }
   .box.arrow-top2 {
     margin-top: 150px;
-    margin-left: -50px;
+    margin-left: -0px;
   }
   
   .box.arrow-top:after {
@@ -286,7 +286,9 @@ transform: scale(1.1);
 }
 
 
-
+.inst-card{
+    height: 500px;
+}
 /* FOOTER */
 
 
@@ -305,6 +307,17 @@ transform: scale(1.1);
         padding: 11em 0;
     }
 }
+
+@media (max-width: 768px){
+    #counter{
+        height: 1200px;
+        background-repeat: repeat;
+    }
+    .text{
+        margin-left: 25%;
+    }
+}
+
 
 .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;

@@ -210,6 +210,14 @@ form-check-label {
     margin: 20px;
 }
 
+
+@media (max-width:768px){
+    .inst-card{
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+}
+
 .inst-card img {
     height: 252px !important;
     width: 252px;

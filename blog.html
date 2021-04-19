@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MusicBox</title>
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous">
+	</script>
+	<!-- W3 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+	<!-- Typed & AOS links     -->
+	<script src="js/typed.js"></script>
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!-- External CSS -->
+	<link rel="stylesheet" href="css/blog.css"> </head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<header class="jumbotron-fluid mb-2">
+		<br> </header>
+	<nav class="navbar navbar-expand-xl sticky-top primary-nav">
+		<a class="navbar-brand mx-auto pt-1 shrink" href="#"><img class="img-fluid img-responsive" height="22" src="assets/musicbox.png"></a>
+		<button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon fa fa-caret-down p-1"></span> </button>
+		<div class="collapse navbar-collapse " id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li><a href="index.html" class="nav-link mr-4  text-center">Home</a></li>
+				<li><a href="instruments.html" class="nav-link mr-4 text-center">Instruments</a></li>
+				<li><a href="#artist-section" class="nav-link mr-4 text-center">Artist</a></li>
+				<li><a href="#learn-section" class="nav-link mr-4 text-center">Learn</a></li>
+				<li><a href="shop.html" class="nav-link mr-4 text-center">Shop</a></li>
+				<li><a href="blog.html" class="nav-link mr-4 text-center">Blog</a></li>
+				<li><a href="#location-section" class="nav-link mr-4 text-center">Location</a></li>
+				<li><a href="about.html" class="nav-link mr-4 text-center">About</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section id="main-blog-section">
+		<div class="container-fluid mt-5 p-5">
+			<div class="row blogposts">
+				<div class="col-lg-6 col-sm-6 col-md-6 mx-auto d-block">
+					<h1 class="text-center">Welcome to <br> MusicBox Blog!</h1> </div>
+				<div class="col-lg-6 col-sm-6 col-md-6 mx-auto d-block visit-store">
+					<h2>Get Awesome <br> Music Instruments</h2>
+					<h5 class="offer">20% Off</h5>
+					<a href="shop.html" id="shop-now">
+						<button class="btn btn-warning shopbtn mx-auto d-block">VISIT STORE </button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<hr class="d-sm-none d-xs-none d-lg-block d-xl-block d-md-block hr-heading"> </div>
+					<div class="col-4">
+						<h1 class="text-center mb-5">Recent Posts</h1> </div>
+					<div class="col-4">
+						<hr class="d-sm-none d-xs-none d-lg-block d-xl-block d-md-block hr-heading"> </div>
+				</div>
+			</div>
+			<div class="row card-deck">
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog1.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost1" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost1">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog1.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog2.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost2" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost2">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog2.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog3.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost3" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost3">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog3.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<hr class="d-sm-none d-xs-none d-lg-block d-xl-block d-md-block hr-heading"> </div>
+					<div class="col-4">
+						<h1 class="text-center mb-5"> Posts</h1> </div>
+					<div class="col-4">
+						<hr class="d-sm-none d-xs-none d-lg-block d-xl-block d-md-block hr-heading"> </div>
+				</div>
+			</div>
+			<div class="row card-deck">
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog4.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost4" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost4">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog4.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog5.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost5" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost5">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog5.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog6.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost6" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost6">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog6.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mt-5">
+			<div class="row card-deck">
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog7.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost7" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost7">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog7.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog8.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost8" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost8">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog8.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+					<div class="card"> <img src="/assets/blog9.jpg" class="img-fluid card-img-top">
+						<div class="card-body">
+							<h2 class="card-title">Lorem ipsum dolor sit amet consectetur</h2>
+							<hr>
+							<h5 class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur
+                                explicabo commodi quidem</h5>
+							<a href="" data-target="#readpost9" data-toggle="modal">
+								<button class="btn btn-link">READ MORE <i class="fa fa-chevron-right text-primary"></i></button>
+							</a>
+							<div class="modal fade" id="readpost9">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-center">Lorem ipsum dolor sit amet consectetur</h4><br><br>
+                            
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+										</div>
+										<div class="modal-body"> 
+                                            <h6>Author: John Doe</h6> <h6>Date: 12-12-2021</h6>
+                                            
+                                            <img src="/assets/blog9.jpg" alt="featured-img" class="feature-img">
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+											<p class="m-3 text-justify post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, laborum blanditiis aspernatur dolorum mollitia sit harum, nostrum, sunt molestiae esse eveniet consequuntur voluptate quibusdam asperiores quasi molestias! Ratione, necessitatibus.</p>
+										</div>
+                                        <div class="card-footer">
+                                            <div class="share">
+                                                <span>share</span> 
+                                                <button class="btn"><a href="#"><i class="fa fa-facebook"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-instagram"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-twitter"></i></a></button>
+                                                <button class="btn"><a href="#"><i class="fa fa-pinterest"></i></a></button>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+	<section>
+		<div class="main-footer">
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-6">
+									<h2 class="footer-heading mb-4">About Us</h2>
+									<p>We provide a platform for Musicians who wanna share their music to the community. And those new fresher artist to show their skills to community.</p>
+								</div>
+								<div class="col-md-4 ml-auto">
+									<h2 class="footer-heading mb-4">Features</h2>
+									<ul class="list-unstyled">
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Services</a></li>
+										<li><a href="#">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+							<form action="#" method="post">
+								<div class="input-group mb-3">
+									<input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+									<div class="input-group-append">
+										<button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row pt-5 mt-5 text-center">
+						<div class="col-md-12">
+							<div class="border-top pt-5">
+								<p> Copyright &copy;
+									<script>
+									document.write(new Date().getFullYear());
+									</script> All rights reserved | MusicBox<font size='5'>®</font> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</section>
+	<!-- SCRIPTS -->
+	<script>
+	var mybutton = document.getElementById("btnTop");
+	window.onscroll = function() {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+	$(".submenu").hide();
+	$(function() {
+		$(".inst-card").hover(function() {
+			$(this).find(".submenu").toggle(200);
+		});
+	});
+	</script>
+	<script src="js/main.js"></script>
+	<script src="js/shrink.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/aosinit.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+
+</html>
