@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicBox</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous">
+    </script>
+    <!-- W3 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+    <!-- Typed & AOS links     -->
+    <script src="js/typed.js"></script>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/artist.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <header class="jumbotron-fluid mb-2">
+        <br> </header>
+    <nav class="navbar navbar-expand-xl sticky-top primary-nav">
+        <a class="navbar-brand mx-auto pt-1 shrink" href="#"><img class="img-fluid img-responsive" height="22"
+                src="assets/musicbox.png"></a>
+        <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon fa fa-caret-down p-1"></span> </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li><a href="index.html" class="nav-link mr-4  text-center">Home</a></li>
+                <li><a href="instruments.html" class="nav-link mr-4 text-center">Instruments</a></li>
+                <li><a href="#artist-section" class="nav-link mr-4 text-center">Artist</a></li>
+                <li><a href="#learn-section" class="nav-link mr-4 text-center">Learn</a></li>
+                <li><a href="shop.html" class="nav-link mr-4 text-center">Shop</a></li>
+                <li><a href="blog.html" class="nav-link mr-4 text-center">Blog</a></li>
+                <li><a href="#location-section" class="nav-link mr-4 text-center">Location</a></li>
+                <li><a href="about.html" class="nav-link mr-4 text-center">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="artist-section">
+
+        <div class="container-fluid section-bg">
+            <div class="text-center">
+                <h1 class="text-white" data-aos="fade-up">Explore New Artist In Your Town!</h1>
+                <a href="#explore"><button class="btn" data-aos="zoom-in">EXPLORE</button></a>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid" id="explore">
+
+
+            <div class="row">
+                <div class="col-12 col-md-7 col-lg-7 col-xl-7 mx-auto d-block">
+
+                    <form action="#" method="post" class="mx-auto d-block">
+                        <div class="input-group mt-4">
+                            <input data-aos="fade-right" type="text" class="form-control text-center text-white bg-transparent"
+                                placeholder="Search for artists, bands, tracks, podcasts">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary text-white" data-aos="fade-right" type="button" id="button-addon2"><i
+                                        class="fa fa-search "></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-2 col-lg-2 col-xl-2 mx-auto d-block">
+                    <h3 class="text-center mt-4" data-aos="zoom-in">or</h3>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 mx-auto d-block">
+
+                    <a href="#"><button class="btn mx-auto d-block m-4 upload-ur-own" data-aos="fade-left">Upload your own</button></a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <h3 class="text-center mt-3" data-aos="fade-up">Listen to Trending Songs Around Community!</h3>
+
+        <div class="container-fluid mx-auto d-block mt-4 trend-songs">
+            <div class="row card-column">
+                <div class="col-10 col-md-2 col-lg-2 col-xl-2 mx-auto d-block mt-4">
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="700"> <img src="/assets/album-cover.jpg" class="img-fluid cover-img">
+                        <div class="play-btn">
+                            <div class="modal fade" id="play">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <marquee behavior="scroll" direction="left">
+                                                <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
+                                            </marquee>
+                                        </div>
+                                        <div class="modal-body">
+                                            <audio controls>
+                                                <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal"><i
+                                                    class="fa fa-close text-white"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                                    class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
+                                class="duration">2:48</span>
+
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit amet</span>
+                            <h6 class="card-sub-title">Artist: John Doe</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-2 col-lg-2 col-xl-2 mx-auto d-block mt-4">
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="700"> <img src="/assets/album-cover2.jpg" class="img-fluid cover-img">
+                        <div class="play-btn">
+                            <div class="modal fade" id="play">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <marquee behavior="scroll" direction="left">
+                                                <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
+                                            </marquee>
+                                        </div>
+                                        <div class="modal-body">
+                                            <audio controls>
+                                                <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal"><i
+                                                    class="fa fa-close text-white"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                                    class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
+                                class="duration">3:08</span>
+
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit amet</span>
+                            <h6 class="card-sub-title">Artist: John Doe</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-2 col-lg-2 col-xl-2 mx-auto d-block mt-4">
+
+                    <div class="card" data-aos="flip-up" data-aos-delay="700"> <img src="/assets/album-cover3.jpg" class="img-fluid cover-img">
+                        <div class="play-btn">
+                            <div class="modal fade" id="play">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <marquee behavior="scroll" direction="left">
+                                                <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
+                                            </marquee>
+                                        </div>
+                                        <div class="modal-body">
+                                            <audio controls>
+                                                <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal"><i
+                                                    class="fa fa-close text-white"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                                    class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
+                                class="duration">2:51</span>
+
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit amet</span>
+                            <h6 class="card-sub-title">Artist: John Doe</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-2 col-lg-2 col-xl-2 mx-auto d-block mt-4">
+
+                    <div class="card" data-aos="flip-up" data-aos-delay="700"> <img src="/assets/album-cover4.jpg" class="img-fluid cover-img">
+                        <div class="play-btn">
+                            <div class="modal fade" id="play">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <marquee behavior="scroll" direction="left">
+                                                <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
+                                            </marquee>
+                                        </div>
+                                        <div class="modal-body">
+                                            <audio controls>
+                                                <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal"><i
+                                                    class="fa fa-close text-white"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                                    class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
+                                class="duration">3:16</span>
+
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit amet</span>
+                            <h6 class="card-sub-title">Artist: John Doe</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-2 col-lg-2 col-xl-2 mx-auto d-block mt-4">
+
+                    <div class="card" data-aos="flip-right" data-aos-delay="700"> <img src="/assets/album-cover6.jpg" class="img-fluid cover-img">
+                        <div class="play-btn">
+                            <div class="modal fade" id="play">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <marquee behavior="scroll" direction="left">
+                                                <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
+                                            </marquee>
+                                        </div>
+                                        <div class="modal-body">
+                                            <audio controls>
+                                                <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal"><i
+                                                    class="fa fa-close text-white"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                                    class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
+                                class="duration">2:13</span>
+
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit amet</span>
+                            <h6 class="card-sub-title">Artist: John Doe</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-2 col-lg-2 col-xl-2 mx-auto d-block mt-4">
+
+                    <div class="card" data-aos="flip-right" data-aos-delay="700"> <img src="/assets/album-cover7.jpg" class="img-fluid cover-img">
+                        <div class="play-btn">
+                            <div class="modal fade" id="play">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <marquee behavior="scroll" direction="left">
+                                                <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
+                                            </marquee>
+                                        </div>
+                                        <div class="modal-body">
+                                            <audio controls>
+                                                <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal"><i
+                                                    class="fa fa-close text-white"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                                    class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
+                                class="duration">2:50</span>
+
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit amet</span>
+                            <h6 class="card-sub-title">Artist: John Doe</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="text-center mx-auto d-block" data-aos="fade-up"
+            style="background-color: #32dbc6; height: 2px; box-shadow: 0px 0px 1px black; margin-top: 50px; margin-bottom: 50px;"
+            width="80%">
+
+            <h2 class="text-center" data-aos="fade-up" data-aos-delay="300">♥ Featured Artists ♥</h2>
+    </section>
+
+
+
+    <section id="artists">
+
+        <div class="container the-artists">
+            <div class="row">
+                <div class="col-lg-3 col-md-10 col-sm-10 mx-auto d-block">
+                    <img src="/assets/person_1.jpg" alt="artist" class="artist" data-aos="flip-left" data-aos-delay="200">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10 mx-auto d-block" data-aos="fade-left" data-aos-delay="500">
+                    <h3>John Doe</h3>
+                    <h4>Best Song: Lorem ipsum</h4>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-10 mx-auto d-block mt-4" data-aos="fade-up" data-aos-delay="600">
+                    <audio controls>
+                        <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-10 col-sm-10 mx-auto d-block">
+                    <img src="/assets/person_2.jpg" alt="artist" class="artist" data-aos="flip-left" data-aos-delay="200" >
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10 mx-auto d-block"  data-aos="fade-left" data-aos-delay="500">
+                    <h3>John Doe</h3>
+                    <h4>Best Song: Lorem ipsum</h4>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-10 mx-auto d-block mt-4" data-aos="fade-up" data-aos-delay="600">
+                    <audio controls>
+                        <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-10 col-sm-10 mx-auto d-block">
+                    <img src="/assets/person_3.jpg" alt="artist" class="artist"  data-aos="flip-left" data-aos-delay="200">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10 mx-auto d-block"   data-aos="fade-left" data-aos-delay="500">
+                    <h3>John Doe</h3>
+                    <h4>Best Song: Lorem ipsum</h4>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-10 mx-auto d-block mt-4" data-aos="fade-up" data-aos-delay="600">
+                    <audio controls>
+                        <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-10 col-sm-10 mx-auto d-block">
+                    <img src="/assets/person_4.jpg" alt="artist" class="artist"  data-aos="flip-left" data-aos-delay="200">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10 mx-auto d-block"   data-aos="fade-left" data-aos-delay="500">
+                    <h3>John Doe</h3>
+                    <h4>Best Song: Lorem ipsum</h4>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-10 mx-auto d-block mt-4" data-aos="fade-up" data-aos-delay="600">
+                    <audio controls>
+                        <source src="/assets/save-your-tears.mp3" type="audio/mp3"></audio>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+    <section>
+        <div class="main-footer">
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="footer-heading mb-4">About Us</h2>
+                                    <p>We provide a platform for Musicians who wanna share their music to the community.
+                                        And those new fresher artist to show their skills to community.</p>
+                                </div>
+                                <div class="col-md-4 ml-auto">
+                                    <h2 class="footer-heading mb-4">Features</h2>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                            <form action="#" method="post">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control border-secondary text-white bg-transparent"
+                                        placeholder="Enter Email" aria-label="Enter Email"
+                                        aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary text-white" type="button"
+                                            id="button-addon2">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row pt-5 mt-5 text-center">
+                        <div class="col-md-12">
+                            <div class="border-top pt-5">
+                                <p> Copyright &copy;
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved | MusicBox<font size='5'>®</font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script>
+        var mybutton = document.getElementById("btnTop");
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        var audioplayer = document.getElementById("audio-player");
+        $("#play-bt").click(function () {
+            if (audioplayer.paused) {
+                audioplayer.play();
+            } else {
+                audioplayer.pause();
+            }
+            $(this).toggleClass('pause');
+            /* style your toggle button according to 
+                                                the current state */
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/shrink.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/aosinit.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
