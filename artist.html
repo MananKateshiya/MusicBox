@@ -35,27 +35,56 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <header class="jumbotron-fluid mb-2">
-        <br> </header>
-    <nav class="navbar navbar-expand-xl sticky-top primary-nav">
-        <a class="navbar-brand mx-auto pt-1 shrink" href="#"><img class="img-fluid img-responsive" height="22"
-                src="assets/musicbox.png"></a>
-        <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon fa fa-caret-down p-1"></span> </button>
-        <div class="collapse navbar-collapse " id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto">
-                <li><a href="index.html" class="nav-link mr-4  text-center">Home</a></li>
-                <li><a href="instruments.html" class="nav-link mr-4 text-center">Instruments</a></li>
-                <li><a href="#artist-section" class="nav-link mr-4 text-center">Artist</a></li>
-                <li><a href="#learn-section" class="nav-link mr-4 text-center">Learn</a></li>
-                <li><a href="shop.html" class="nav-link mr-4 text-center">Shop</a></li>
-                <li><a href="blog.html" class="nav-link mr-4 text-center">Blog</a></li>
-                <li><a href="#location-section" class="nav-link mr-4 text-center">Location</a></li>
-                <li><a href="about.html" class="nav-link mr-4 text-center">About</a></li>
-            </ul>
-        </div>
-    </nav>
-
+    
+    <header class="jumbotron-fluid mb-4">
+        <br>
+     </header>
+ 
+     <nav class="navbar navbar-expand-xl sticky-top primary-nav">
+         <a class="navbar-brand mx-auto pt-1 shrink" href="#"><img class="img-fluid img-responsive" height="22"
+                 src="assets/musicbox.png"></a>
+         <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+             <span class="navbar-toggler-icon fa fa-caret-down p-1"></span>
+         </button>
+         <div class="collapse navbar-collapse " id="collapsibleNavbar">
+             <ul class="navbar-nav ml-auto">
+ 
+                 <li><a href="#home-section" class="nav-link mr-4  text-center">Home</a></li>
+                 <li><a href="instruments.html" class="nav-link mr-4 text-center">Instruments</a></li>
+                 <li><a href="artist.html" class="nav-link mr-4 text-center">Artist</a></li>
+                 <li><a href="#learn-section" class="nav-link mr-4 text-center">Learn</a></li>
+                 <li><a href="shop.html" class="nav-link mr-4 text-center">Shop</a></li>
+                 <li><a href="blog.html" class="nav-link mr-4 text-center">Blog</a></li>
+                 <li><a href="#location-section" class="nav-link mr-4 text-center">Location</a></li>
+                 <li><a href="about.html" class="nav-link mr-4 text-center">About</a></li>
+                 <button class="btn btn-primary text-center mr-4" data-toggle="modal" data-target="#sign-in"> <i class="fa fa-sign-in text-white"></i>&nbsp;&nbsp;Sign In</button>
+ 
+             </ul>
+         </div>
+     </nav>
+     <div class="modal fade" id="sign-in">
+         <div class="modal-dialog">
+           <div class="modal-content">
+           
+    
+             <div class="modal-header">
+               <h4 class="modal-title m-3">Who are you?</h4>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+             
+     
+             <div class="modal-body text-center">
+ 
+                 <a href="artist-login.html"><button class="btn btn-warning pl-4 pr-4 pt-3 pb-3 m-4" >Artist</button></a>
+                 <a href="listener-login.html"><button class="btn btn-success pl-4 pr-4 pt-3 pb-3 m-4" >Listener</button></a>
+                 <a href="seller-login.html"><button class="btn btn-danger  pl-4 pr-4 pt-3 pb-3 m-4"  >Seller</button></a>
+                 
+             </div>
+  
+           </div>
+         </div>
+       </div>
+ 
 
     <section id="artist-section">
 
@@ -107,13 +136,13 @@
 
                     <div class="card" data-aos="flip-left" data-aos-delay="700"> <img src="/assets/album-cover.jpg" class="img-fluid cover-img">
                         <div class="play-btn">
-                            <div class="modal fade" id="play">
+                            <div class="modal fade" id="play1">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <marquee behavior="scroll" direction="left">
+                                            
                                                 <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
-                                            </marquee>
+                                            
                                         </div>
                                         <div class="modal-body">
                                             <audio controls>
@@ -130,7 +159,7 @@
                             </div>
 
 
-                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                            <button data-toggle="modal" data-target="#play1" class="btn p-2"><i
                                     class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
                                 class="duration">2:48</span>
 
@@ -146,13 +175,13 @@
 
                     <div class="card" data-aos="flip-left" data-aos-delay="700"> <img src="/assets/album-cover2.jpg" class="img-fluid cover-img">
                         <div class="play-btn">
-                            <div class="modal fade" id="play">
+                            <div class="modal fade" id="play2">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <marquee behavior="scroll" direction="left">
+                                            
                                                 <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
-                                            </marquee>
+                                            
                                         </div>
                                         <div class="modal-body">
                                             <audio controls>
@@ -169,7 +198,7 @@
                             </div>
 
 
-                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                            <button data-toggle="modal" data-target="#play2" class="btn p-2"><i
                                     class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
                                 class="duration">3:08</span>
 
@@ -185,13 +214,13 @@
 
                     <div class="card" data-aos="flip-up" data-aos-delay="700"> <img src="/assets/album-cover3.jpg" class="img-fluid cover-img">
                         <div class="play-btn">
-                            <div class="modal fade" id="play">
+                            <div class="modal fade" id="play3">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <marquee behavior="scroll" direction="left">
+                                            
                                                 <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
-                                            </marquee>
+                                            
                                         </div>
                                         <div class="modal-body">
                                             <audio controls>
@@ -208,7 +237,7 @@
                             </div>
 
 
-                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                            <button data-toggle="modal" data-target="#play3" class="btn p-2"><i
                                     class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
                                 class="duration">2:51</span>
 
@@ -224,13 +253,13 @@
 
                     <div class="card" data-aos="flip-up" data-aos-delay="700"> <img src="/assets/album-cover4.jpg" class="img-fluid cover-img">
                         <div class="play-btn">
-                            <div class="modal fade" id="play">
+                            <div class="modal fade" id="play4">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <marquee behavior="scroll" direction="left">
+                                            
                                                 <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
-                                            </marquee>
+                                            
                                         </div>
                                         <div class="modal-body">
                                             <audio controls>
@@ -247,7 +276,7 @@
                             </div>
 
 
-                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                            <button data-toggle="modal" data-target="#play4" class="btn p-2"><i
                                     class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
                                 class="duration">3:16</span>
 
@@ -263,13 +292,13 @@
 
                     <div class="card" data-aos="flip-right" data-aos-delay="700"> <img src="/assets/album-cover6.jpg" class="img-fluid cover-img">
                         <div class="play-btn">
-                            <div class="modal fade" id="play">
+                            <div class="modal fade" id="play5">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <marquee behavior="scroll" direction="left">
+                                            
                                                 <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
-                                            </marquee>
+                                            
                                         </div>
                                         <div class="modal-body">
                                             <audio controls>
@@ -286,7 +315,7 @@
                             </div>
 
 
-                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                            <button data-toggle="modal" data-target="#play5" class="btn p-2"><i
                                     class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
                                 class="duration">2:13</span>
 
@@ -302,13 +331,13 @@
 
                     <div class="card" data-aos="flip-right" data-aos-delay="700"> <img src="/assets/album-cover7.jpg" class="img-fluid cover-img">
                         <div class="play-btn">
-                            <div class="modal fade" id="play">
+                            <div class="modal" id="play6">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <marquee behavior="scroll" direction="left">
+                                            
                                                 <h6 class="text-center">Song: Save your tears • Artist: The Weeknd</h6>
-                                            </marquee>
+                                            
                                         </div>
                                         <div class="modal-body">
                                             <audio controls>
@@ -325,7 +354,7 @@
                             </div>
 
 
-                            <button data-toggle="modal" data-target="#play" class="btn p-2"><i
+                            <button data-toggle="modal" data-target="#play6" class="btn p-2"><i
                                     class="fa fa-play"></i>&nbsp;&nbsp;Open Player</button><span
                                 class="duration">2:50</span>
 

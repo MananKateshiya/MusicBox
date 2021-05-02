@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicBox</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous">
+    </script>
+
+    <!-- W3 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+
+    <!-- Typed & AOS links     -->
+    <script src="js/typed.js"></script>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <!-- External CSS -->
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/seller-login.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <header class="jumbotron-fluid mb-4">
+        <br>
+     </header>
+ 
+     <nav class="navbar navbar-expand-xl sticky-top primary-nav">
+         <a class="navbar-brand mx-auto pt-1 shrink" href="#"><img class="img-fluid img-responsive" height="22"
+                 src="assets/musicbox.png"></a>
+         <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+             <span class="navbar-toggler-icon fa fa-caret-down p-1"></span>
+         </button>
+         <div class="collapse navbar-collapse " id="collapsibleNavbar">
+             <ul class="navbar-nav ml-auto">
+ 
+                 <li><a href="#home-section" class="nav-link mr-4  text-center">Home</a></li>
+                 <li><a href="instruments.html" class="nav-link mr-4 text-center">Instruments</a></li>
+                 <li><a href="artist.html" class="nav-link mr-4 text-center">Artist</a></li>
+                 <li><a href="#learn-section" class="nav-link mr-4 text-center">Learn</a></li>
+                 <li><a href="shop.html" class="nav-link mr-4 text-center">Shop</a></li>
+                 <li><a href="blog.html" class="nav-link mr-4 text-center">Blog</a></li>
+                 <li><a href="#location-section" class="nav-link mr-4 text-center">Location</a></li>
+                 <li><a href="about.html" class="nav-link mr-4 text-center">About</a></li>
+                 <button class="btn btn-primary text-center mr-4" data-toggle="modal" data-target="#sign-in"> <i class="fa fa-sign-in text-white"></i>&nbsp;&nbsp;Sign In</button>
+ 
+             </ul>
+         </div>
+     </nav>
+     <div class="modal fade" id="sign-in">
+         <div class="modal-dialog">
+           <div class="modal-content">
+           
+    
+             <div class="modal-header">
+               <h4 class="modal-title m-3">Who are you?</h4>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+             
+     
+             <div class="modal-body text-center">
+ 
+                 <a href="artist-login.html"><button class="btn btn-warning pl-4 pr-4 pt-3 pb-3 m-4" >Artist</button></a>
+                 <a href="listener-login.html"><button class="btn btn-success pl-4 pr-4 pt-3 pb-3 m-4" >Listener</button></a>
+                 <a href="seller-login.html"><button class="btn btn-danger  pl-4 pr-4 pt-3 pb-3 m-4"  >Seller</button></a>
+                 
+             </div>
+  
+           </div>
+         </div>
+       </div>
+ 
+
+    <section class="enter">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6 mt-4">
+                    <h1 class="text-center">Sign in</h1>
+                    <form action="#" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="uname">Enter Seller Name:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname"
+                                required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="pswd" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Let's Go</button>
+                    </form>
+
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6 register">
+
+                    <h1 class="text-center">Register as a Seller <i class="text-white mt-4 fa fa-user"></i></h1>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="uname">Seller Name:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter Username" name="uname"
+                                required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Enter Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email"
+                                required>
+                            <div class="valid-feedback">All good ☺</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="number">Enter Mobile:</label>
+                            <input type="number" class="form-control" id="mbn" placeholder="Enter Mobile Number"
+                                name="mobile" required min="10">
+                            <div class="valid-feedback">All good ☺</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter Password"
+                                name="pswd" required>
+                            <div class="valid-feedback">All good ☺</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="pwd">Confirm Password:</label>
+                            <input type="password" class="form-control" id="c-pwd" placeholder="Confirm Password"
+                                name="c-pswd" required>
+                            <div class="valid-feedback">All good ☺</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="error"><span class="text-danger">Please Re-confirm the password</span></div>
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember" required>I agree the<a
+                                    href="#" class="btn btn-link">Terms & Conditions</a>
+
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Check this checkbox to continue.</div>
+
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register Me</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
+
+    <section>
+        <div class="main-footer">
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <h2 class="footer-heading mb-4">About Us</h2>
+                                    <p>We provide a platform for Musicians who wanna share their music to the
+                                        community.
+                                        And
+                                        those new fresher artist to show their skills to community.</p>
+                                </div>
+
+                                <div class="col-md-4 ml-auto">
+                                    <h2 class="footer-heading mb-4">Features</h2>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                            <form action="#" method="post">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control border-secondary text-white bg-transparent"
+                                        placeholder="Enter Email" aria-label="Enter Email"
+                                        aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary text-white" type="button"
+                                            id="button-addon2">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row pt-5 mt-5 text-center">
+                        <div class="col-md-12">
+                            <div class="border-top pt-5">
+                                <p>
+
+                                    Copyright &copy;<script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved | MusicBox<font size='5'>®</font>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </section>
+    </div>
+
+</body>
+<!-- SCRIPTS -->
+
+<script src="js/typed.js"></script>
+<script>
+    var typed = new Typed('.typed-words', {
+        strings: ["Make Music", "Raise Community", "Teach Music", "Sell Songs and Music",
+            "Hear Your Songs"
+        ],
+        typeSpeed: 90,
+        backSpeed: 80,
+        backDelay: 3000,
+        startDelay: 1000,
+        loop: true,
+        showCursor: true,
+    });
+
+
+    var mybutton = document.getElementById("btnTop");
+
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<script>
+    $('.error').hide();
+
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+
+            var forms = document.getElementsByClassName('needs-validation');
+
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+
+                    if ($('#pwd').val() != $('#c-pwd').val()) {
+
+                        $('.error').show();
+                    }
+
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+
+                    form.classList.add('was-validated');
+
+                }, false);
+
+                form.addEventListener('submit', function (event) {
+
+                    if ($('#pwd').val() != $('#c-pwd').val()) {
+                        $('.error').show();
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+
+                        form.validation == true;
+
+                    }
+                }, false);
+            });
+
+        }, false);
+    })();
+</script>
+
+
+
+
+<script src="js/main.js"></script>
+<script src="js/shrink.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/aosinit.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
