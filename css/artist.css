@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    height: 40px;
+    height: 20px;
 }
 
 h1,
@@ -84,6 +84,7 @@ nav {
 
 .jumbotron-fluid {
     background-color: #3b3b3b !important;
+    height: 50px !important;
 }
 
 

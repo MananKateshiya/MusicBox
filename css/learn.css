@@ -33,6 +33,9 @@ h5,
     font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+header {
+    height: 20px;
+}
 
 .img-responsive {
     height: auto;
@@ -75,11 +78,11 @@ nav {
     line-height: 0 !important;
 }
 
-
-
 .jumbotron-fluid {
     background-color: #3b3b3b !important;
+    height: 50px !important;
 }
+
 
 
 button {

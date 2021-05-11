@@ -80,7 +80,10 @@ nav {
 
 .jumbotron-fluid {
     background-color: #3b3b3b !important;
+    height: 50px !important;
 }
+
+
 
 
 .about-poster {
