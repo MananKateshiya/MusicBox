@@ -171,7 +171,8 @@ div.videobtn>.btn:hover {
 
 
 .card {
-  width: 300px;
+
+  width: auto;
   height: auto;
   margin-top: 50px !important;
   margin-bottom: 50px !important;
@@ -214,6 +215,9 @@ h1.topdj {
   margin-left: 53%;
 }
 
+.card-deck {
+  margin-left: 20px !important;
+}
 
 .site-footer {
 
@@ -227,7 +231,16 @@ h1.topdj {
   .site-footer {
     padding: 11em 0;
   }
+
 }
+
+@media (max-width: 768px) {
+
+  .card-deck {
+    margin-left: 0px !important;
+  }
+}
+
 
 .site-footer .border-top {
   border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -307,18 +320,19 @@ h1.topdj {
   color: rgb(153, 48, 48);
 }
 
-.bookbtn{
+.bookbtn {
   background-color: rgb(50, 219, 198, 0.9) !important;
   color: white;
 }
-.bookbtn:hover{
+
+.bookbtn:hover {
   background-color: rgb(50, 219, 192) !important;
   color: white;
   box-shadow: 0px 0px 3px white;
 }
 
 
-#btnTop{
+#btnTop {
   padding: 0px 10px 0px 10px;
   background-color: #32dbc6;
   display: none;
@@ -334,39 +348,41 @@ h1.topdj {
 
 }
 
-#btnTop i{
-color: white !important;
+#btnTop i {
+  color: white !important;
 }
 
-#btnTop:hover{
+#btnTop:hover {
   color: black;
   box-shadow: 0px 0px 4px 4px white;
 }
 
 
 
-button{
+button {
   background-color: #32dbc6;
   border: none;
 }
 
-button:hover{
-background: linear-gradient(135deg, #32dbc6, orange, rgb(204, 43, 204), lime);
-background-size: 400% 400%;
-animation: gradient 3s ease infinite;
+button:hover {
+  background: linear-gradient(135deg, #32dbc6, orange, rgb(204, 43, 204), lime);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
 
 }
 
 @keyframes gradient {
-0% {
-  background-position: 0% 50%;
-}
-50% {
-  background-position: 100% 50%;
-}
-100% {
-  background-position: 0% 50%;
-}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
