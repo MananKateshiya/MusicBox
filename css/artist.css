@@ -89,7 +89,7 @@ nav {
 
 
 .section-bg {
-    background: url(/assets/one-direction.mp4);
+    background: url(../assets/one-direction.mp4);
     background-attachment: fixed;
     background-size: cover;
     mask-repeat: no-repeat;
@@ -100,7 +100,7 @@ nav {
 
 .section-bg{
     height: 300px;
-    background: url(/assets/videogif.gif);
+    background: url(../assets/videogif.gif);
     background-size: cover;
     background-attachment: fixed;
     

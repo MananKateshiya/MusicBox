@@ -94,7 +94,7 @@ nav {
 }
 
 .visit-store{
-    background-image: url(/assets/counter1.jpg) !important;
+    background-image: url(../assets/counter1.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     height: 120px;
